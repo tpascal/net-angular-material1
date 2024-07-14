@@ -6,6 +6,7 @@ import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./material.module";
 import { AppRoutingModule } from "./app-routing.module";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from "./app.component";
 import { NavMenuComponent } from "./nav-menu/nav-menu.component";
@@ -41,7 +42,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
     // RouterModule.forRoot([
     //   { path: "", component: HomeComponent, pathMatch: "full" },
     //   { path: "counter", component: CounterComponent },
