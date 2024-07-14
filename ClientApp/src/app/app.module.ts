@@ -43,7 +43,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule
     // RouterModule.forRoot([
     //   { path: "", component: HomeComponent, pathMatch: "full" },
     //   { path: "counter", component: CounterComponent },
