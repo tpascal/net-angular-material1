@@ -5,7 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  openSidenav = false;
-  
+  //openSidenav = false;
+  //@ViewChild('sidenav')
+
+  //onToggle() {
+
+  //}
+
   //title = 'app';
 }
