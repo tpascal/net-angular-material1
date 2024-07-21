@@ -22,6 +22,7 @@ import { PastTrainingComponent } from './training/past-training/past-training.co
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { StopTrainingComponent } from "./training/current-training/stop-training.component";
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
+    StopTrainingComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "ng-cli-universal" }),
@@ -57,5 +59,6 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [StopTrainingComponent]
 })
 export class AppModule {}
