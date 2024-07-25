@@ -28,12 +28,21 @@ export class TrainingService {
     }
 
     cancelExercise(progress: number) {
-        this.exercises.push({ ...this.runningExercise, duration: this.runningExercise.duration * (progress/100), calories: this.runningExercise.calories * (progress/100), date: new Date(), state: 'cancelled' });
+        this.exercises.push({
+            ...this.runningExercise,
+            duration: this.runningExercise.duration * (progress / 100),
+            calories: this.runningExercise.calories * (progress / 100),
+            date: new Date(), state: 'cancelled'
+        });
         this.runningExercise = null;
         this.exerciseChanged.next(null);
     }
 
     getRunningExercise() {
         return { ...this.runningExercise };
+    }
+
+    getCompletedOrCancelledExercises() {
+        return this.exercises.slice();
     }
 }
