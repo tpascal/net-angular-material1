@@ -26,6 +26,11 @@ import { StopTrainingComponent } from "./training/current-training/stop-training
 import { AuthService } from "./auth/auth.service";
 import { TrainingService } from "./training/training.service";
 
+import { AngularFireModule } from "angularfire2";
+import { AngularFirestoreModule } from "angularfire2/firestore";
+
+import { environment } from "src/environments/environment";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +57,9 @@ import { TrainingService } from "./training/training.service";
     MaterialModule,
     AppRoutingModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'fitness'),
+    AngularFirestoreModule  
     // RouterModule.forRoot([
     //   { path: "", component: HomeComponent, pathMatch: "full" },
     //   { path: "counter", component: CounterComponent },
