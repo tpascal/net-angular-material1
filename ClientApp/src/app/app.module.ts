@@ -28,6 +28,7 @@ import { TrainingService } from "./training/training.service";
 
 import { AngularFireModule } from "angularfire2";
 import { AngularFirestoreModule } from "angularfire2/firestore";
+import { AngularFireAuthModule } from "angularfire2/auth";
 
 import { environment } from "src/environments/environment";
 
@@ -59,7 +60,8 @@ import { environment } from "src/environments/environment";
     FlexLayoutModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase, 'fitness'),
-    AngularFirestoreModule  
+    AngularFirestoreModule,
+    AngularFireAuthModule
     // RouterModule.forRoot([
     //   { path: "", component: HomeComponent, pathMatch: "full" },
     //   { path: "counter", component: CounterComponent },
